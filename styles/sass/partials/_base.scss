@@ -1,7 +1,18 @@
+html {
+    // base font: 20px (1rem)
+    font-size: 125%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ebf4fa;
+}
+
 .wrapper {
-    max-width: 1440px;
+    max-width: 1480px;
+    width: 60%;
     margin: 0 auto;
-    width: 85%;
 }
 
 img {
@@ -16,24 +27,36 @@ ul {
 
 a {
     text-decoration: none;
-    color: inherit;
 }
 
-html {
-    scroll-behavior: smooth;
+p {
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 15px;
+    color: #333333;
+    letter-spacing: 0;
 }
 
-html,
-body {
-    overflow-x: hidden;
-}
-
+// base styling for main buttons
 button {
-    background: none;
-    color: inherit;
+    background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%);
+    padding: 15px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.8s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
     border: none;
-    padding: 0;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
+    width: 12rem;
+    margin-top: 2rem;
+}
+
+button:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
 }
